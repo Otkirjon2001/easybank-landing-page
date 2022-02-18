@@ -139,3 +139,33 @@ ul{
 .sitenav-item-link:active{
   opacity: 0.6;
 }
+
+/* HERO */
+.hero {
+  position: relative;
+  z-index: 50;
+  padding-top: 170px;
+  padding-bottom: 170px;
+  background-color: #fff;
+  background-image: url(../imgs/hero-phones-desktop.svg),url(../imgs/hero-bg-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: right calc(50% - 350px) center, right calc(50% - 250px) center ;
+}
+.hero-content {
+  max-width: 447px;
+  width: 100%;
+}
+.hero-heading {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-weight: 100;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: -1px;
+  color: var(--bg-color);
+}
+.hero-text {
+  margin-top: 0;
+  margin-bottom: 36px;
+  letter-spacing: -0.28125px;
+}
