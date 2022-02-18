@@ -59,7 +59,7 @@ ul{
   padding: 8px 34px;
   font-size: 14px;
   color: #fff;
-  background-color: var(--primary-color);
+  background-color: #fff;
   background-image: var(--button-bg);
   border-radius: 22px;
   white-space: nowrap;
@@ -283,6 +283,7 @@ ul{
   letter-spacing: -0.285714px;
 }
 .articles-item-heading-link{
+  color: var(--bg-color);
   text-decoration: none;
   transition: color 0.4s ease, opacity 0.4s ease;
 }
@@ -297,4 +298,87 @@ ul{
   font-size: 13px;
   line-height: 18px;
   letter-spacing: -0.203125px;
+}
+
+/* FOOTER */
+.site-footer {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  background-color: var(--bg-color);
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-left {
+  display: flex;
+  margin-right: 30px;
+}
+.footer-logo-media {
+  margin-right: 130px;
+}
+.footer-logo-link {
+  display: flex;
+  transition: opacity 0.4s ease;
+  margin-bottom: 55px;
+}
+.footer-logo-link:hover{
+  opacity: 0.8;
+}
+.footer-logo-link:hover{
+  opacity: 0.6;
+}
+
+.social-media-list {
+  display: flex;
+}
+.social-media-item:not(:last-child) {
+  margin-right: 13px;
+}
+.social-media-item-link {
+  display: flex;
+  color: #fff;
+  transition: color 0.4s ease, opacity 0.4s ease;
+}
+.social-media-item-link:hover{
+  color: var(--primary-color);
+}
+.social-media-item-link:active{
+  opacity: 0.6;
+}
+.footer-nav-list {
+  margin-right: 30px;
+}
+.footer-nav-list:not(:last-child){
+  margin-right: 100px;
+}
+.foorer-nav-list-item:not(:last-child) {
+  margin-bottom: 8px;
+}
+.footer-nav-list-link {
+  font-size: 15px;
+  line-height: 26px;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.4s ease, opacity 0.4s ease;
+}
+.footer-nav-list-link:hover{
+  color: var(--primary-color);
+}
+.footer-nav-list-link:active{
+  opacity: 0.6;
+}
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.footer-button {
+  margin-bottom: 24px;
+}
+.last-text {
+  font-size: 15px;
+  line-height: 26px;
+  opacity: 0.5;
+  color: #fff;
 }
