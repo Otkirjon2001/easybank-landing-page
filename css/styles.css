@@ -116,39 +116,40 @@ ul{
   padding-top: 4px;
   background-color: var(--primary-font-color);
 }
-.header-container {
+.site-header__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.header-logo-link {
+.site-header__logo{
+  margin-right: 100px;
+}
+.logo {
+  flex-shrink: 0;
   display: flex;
-  margin-right: 250px;
   transition: opacity 0.4s ease;
 }
-.header-logo-link:hover{
+.logo:hover{
   opacity: 0.8;
 }
-.header-logo-link:active{
+.logo:active{
   opacity: 0.6;
 }
-.site-logo {
-  flex-shrink: 0;
+.logo__img {
   width: 140px;
   height: 20px;
 }
-.sitenav-list {
-  flex-grow: 1;
+.sitenav__list {
   display: flex;
 }
-.sitenav-item{
+.sitenav__item{
   display: flex;
   flex-direction: column;
 }
-.sitenav-item:not(:last-child) {
+.sitenav__item:not(:last-child) {
   margin-right: 30px;
 }
-.sitenav-item-link {
+.sitenav__link {
   display: inline-block;
   padding-bottom: 28px;
   padding-top: 28px;
@@ -160,19 +161,22 @@ ul{
   text-decoration: none;
   text-transform: capitalize;
 }
-.sitenav-item-link:hover{
+.sitenav__link:hover{
   color: var(--bg-color);
 }
-.sitenav-item-link-border{
+.sitenav__border{
   height: 4px;
   background: var(--primary-font-color);
   transition: all 0.4s ease;
 }
-.sitenav-item-link:hover ~ .sitenav-item-link-border{
+.sitenav__link:hover ~ .sitenav__border{
   background-image: var(--button-bg);
 }
-.sitenav-item-link:active{
+.sitenav__link:active{
   opacity: 0.6;
+}
+.site-header__button{
+  margin-left: 100px;
 }
 
 /* HERO */
