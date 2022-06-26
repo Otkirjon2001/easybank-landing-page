@@ -188,22 +188,22 @@ ul{
   background-repeat: no-repeat;
   background-position: right calc(50% - 605px) top calc( -260px );
 }
-.hero-container{
+.hero__container{
   position: relative;
   display: flex;
   align-items: center;
 }
-.hero-content {
+.hero__content {
   max-width: 447px;
   width: 100%;
 }
-.hero-bg-img{
+.hero__img{
   position: absolute;
   right: -290px;
   width: 789px;
   height: 960px;
 }
-.hero-heading {
+.hero__heading {
   margin-top: 0;
   margin-bottom: 24px;
   font-weight: 100;
@@ -212,7 +212,7 @@ ul{
   letter-spacing: -1px;
   color: var(--bg-color);
 }
-.hero-text {
+.hero__text {
   margin-top: 0;
   margin-bottom: 36px;
   letter-spacing: -0.28125px;
