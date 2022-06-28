@@ -132,7 +132,7 @@ ul{
 }
 .logo {
   flex-shrink: 0;
-  display: flex;
+  display: inline-block;
   transition: opacity 0.4s ease;
 }
 .logo:hover{
@@ -142,6 +142,7 @@ ul{
   opacity: 0.6;
 }
 .logo__img {
+  display: block;
   width: 140px;
   height: 20px;
 }
@@ -375,10 +376,13 @@ ul{
   margin-right: 30px;
 }
 .site-footer__logo-media {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   margin-right: 130px;
 }
 .site-footer__logo{
-  margin-bottom: 55px;
+  margin-bottom: 24px;
 }
 .social-media {
   display: flex;
@@ -422,6 +426,7 @@ ul{
 .site-footer__right {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: flex-end;
 }
 .site-footer__button {
@@ -430,6 +435,5 @@ ul{
 .site-footer__caution {
   font-size: 15px;
   line-height: 26px;
-  opacity: 0.5;
-  color: var(--primary-font-color);
+  color: rgba(255, 255, 255, 0.5);
 }
