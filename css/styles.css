@@ -52,7 +52,7 @@ body{
   font-size: 18px;
   line-height: 28px;
   color: var(--text-color);
-  background-color: var(--primary-font-color);
+  background-color: #fafafa;
 }
 img{
   max-width: 100%;
@@ -196,7 +196,6 @@ ul{
 .hero {
   padding-top: 170px;
   padding-bottom: 170px;
-  background-color: var(--primary-font-color);
   background-image:url(../imgs/hero-bg-desktop.svg);
   background-repeat: no-repeat;
   background-position: right calc(50% - 605px) top calc( -260px );
@@ -292,6 +291,7 @@ ul{
 .articles {
   padding-top: 80px;
   padding-bottom: 60px;
+  background-color: #fafafa;
 }
 .articles__heading {
   margin-top: 0;
@@ -305,26 +305,31 @@ ul{
 .articles__list {
   display: flex;
   flex-wrap: wrap;
+  margin-right: -30px;
 }
 .articles__item {
-  margin-bottom: 20px;
-}
-.articles__item:not(:last-child){
   margin-right: 30px;
+  margin-bottom: 20px;
 }
 .article{
   max-width: 255px;
   width: 100%;
+  border-radius: 5px;
+  background-color: var(--primary-font-color);
 }
 .article__inner{
+  display: flex;
+  flex-direction: column;
   padding: 24px;
 }
 .article__img {
+  display: block;
   width: 255px;
   height: 200px;
   border-radius: 5px 5px 0px 0px;
 }
 .article__source {
+  order: -1;
   margin-bottom: 8px;
   font-size: 10px;
   letter-spacing: -0.15625px;
