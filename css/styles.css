@@ -396,7 +396,6 @@ ul{
 }
 .site-footer__container {
   display: flex;
-  justify-content: space-between;
 }
 .site-footer__left {
   display: flex;
@@ -428,10 +427,11 @@ ul{
 .social-media__link:active{
   opacity: 0.6;
 }
-.site-footer__navigation {
-  margin-right: 30px;
+.site-footer__center{
+  display: flex;
+  margin-right: auto;
 }
-.site-footer__navigation:not(:last-child){
+.site-footer__navigation:nth-child(1){
   margin-right: 100px;
 }
 .navigation__item:not(:last-child) {
@@ -455,6 +455,7 @@ ul{
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-end;
+  margin-left: 50px;
 }
 .site-footer__button {
   margin-bottom: 24px;
@@ -692,6 +693,9 @@ ul{
     padding-top: 64px;
     padding-bottom: 124px;
   }
+  .why-choose__list{
+    margin-right: 0;
+  }
   .why-choose__item{
     margin-bottom: 40px;
     margin-right: 0;
@@ -734,5 +738,65 @@ ul{
   }
   .articles__item{
     margin-bottom: 24px;
+  }
+}
+
+/* FOOTER */
+@media only screen and (max-width: 900px){
+  .site-footer__logo-media{
+    margin-right: 80px;
+  }
+  .site-footer__navigation:nth-child(1) {
+    margin-right: 50px;
+  }
+}
+@media only screen and (max-width: 810px){
+  .site-footer__logo-media{
+    justify-content: start;
+  }
+  .site-footer__right{
+    justify-content: start;
+  }
+  .site-footer__center{
+    flex-grow: 1;
+    flex-direction: column;
+    margin-right: 0;
+  }
+  .site-footer__navigation:nth-child(1) {
+    margin-right: 0;
+  }
+  .site-footer__navigation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 660px){
+  .site-footer__logo-media{
+    margin-right: 40px;
+  }
+  .site-footer__right{
+    margin-left: 30px;
+  }
+}
+@media only screen and (max-width: 600px){
+  .site-footer{
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .site-footer__container{
+    flex-direction: column;
+    align-items: center;
+  }
+  .site-footer__logo-media{
+    margin-right: 0;
+    margin-bottom: 32px;
+  }
+  .site-footer__center{
+    margin-bottom: 32px;
+  }
+  .site-footer__right{
+    align-items: center;
+    margin-left: 0;
   }
 }
